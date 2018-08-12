@@ -1,12 +1,12 @@
-/* pages/brand/s1/s1.wxss */
 .news{
     padding: 5px;
     background-color: #fff;
     margin-bottom: 100rpx;
 }
 .btn-bottom{
+    border-top: 1px solid #aeaeae;
     height: 100rpx;
-    background: #5e5e5e;
+    background: #fff;
     position: fixed;
     bottom: 0px;
     display: flex;
@@ -17,9 +17,7 @@
 .half{    
     background: #fff;
     height: 100rpx;
-    margin: 0px auto;
-    border: 3rpx solid #5e5e5e;
-    width: 49%;
+    width: 50%;
     text-align: center;
 }
 .half image{

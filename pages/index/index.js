@@ -32,6 +32,15 @@ Page({
      */
     onLoad: function(options) {
         var that=this;
+        wx.request({
+            url: 'https://e.fslujiaoxiang.cn/jiameng/suancaiyujiameng/aaa.php',
+            success:function(res){
+                console.log(res.data);
+                that.setData({
+                    brand: res.data
+                });
+            }
+        })
     },
 
     formSubmit: function(e) {

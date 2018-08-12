@@ -10,15 +10,15 @@
     </view>
     <view style='text-align: center;'>加盟品牌</view>
     <view class='brand'>
-        <view class='half'>
-            <navigator url="/pages/brand/s1/s1?id=54" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
+        <view class='half' wx:for="{{brand}}" wx:key="*this">
+            <navigator url="/pages/brand/{{item.num}}/{{item.num}}?id={{item.id}}" hover-class="navigator-hover">
+                <image src='{{item.brandImage}}' mode='widthFix'></image>
                 <view>
-                    <text>1</text>
+                    <text>{{item.brandName}}</text>
                 </view>
             </navigator>
         </view>
-        <view class='half'>
+        <!-- <view class='half'>
             <navigator url="/pages/brand/s2/s2" hover-class="navigator-hover">
                 <image src='../../images/index.jpg' mode='widthFix'></image>
                 <view>
@@ -73,7 +73,7 @@
                     <text>8</text>
                 </view>
             </navigator>
-        </view>
+        </view> -->
     </view>
     <view class='a'>
         <form catchsubmit="formSubmit">

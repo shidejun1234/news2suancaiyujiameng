@@ -1,4 +1,3 @@
-// pages/brand/s1/s1.js
 var WxParse = require('../../../wxParse/wxParse.js');
 Page({
 
@@ -29,7 +28,7 @@ Page({
     onLoad: function(options) {
         var that = this;
         wx.request({
-            url: 'https://e.fslujiaoxiang.cn/tea/bbb.php', //仅为示例，并非真实的接口地址
+            url: 'https://e.fslujiaoxiang.cn/jiameng/suancaiyujiameng/bbb.php', //仅为示例，并非真实的接口地址
             method: 'GET',
             data: {
                 id: options.id
@@ -38,12 +37,8 @@ Page({
                 'content-type': 'application/json' // 默认值
             },
             success: function(res) {
-                that.setData({
-                    newsData: res.data,
-                    newsContent: res.data.newsContent
-                });
                 var article = res.data;
-                WxParse.wxParse('article', 'html', res.data.newsContent, that, 5);
+                WxParse.wxParse('article', 'html', res.data.brandCenter, that, 5);
             }
         })
     },
