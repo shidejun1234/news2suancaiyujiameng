@@ -1,4 +1,4 @@
-<import src="../../../wxParse/wxParse.wxml" />
+<import src="../../wxParse/wxParse.wxml" />
 <view class='page'>
     <view class='top'>
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper' style='height:{{hig}}rpx;'>
@@ -14,10 +14,10 @@
     </view>
     <view class='btn-bottom'>
         <view class='half' bindtap='call'>
-            <image src='../../../images/call3.jpg' mode='widthFix'></image>
+            <image src='../../images/call3.jpg' mode='widthFix'></image>
         </view>
-        <view class='half'>
-            <image src='../../../images/liuyan3.jpg' mode='widthFix'></image>
+        <view class='half' bindtap='liuyan'>
+            <image src='../../images/liuyan3.jpg' mode='widthFix'></image>
         </view>
     </view>
 </view>

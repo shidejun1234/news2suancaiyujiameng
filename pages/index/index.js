@@ -14,13 +14,12 @@ Page({
         autoplay: true,
         interval: 2500,
         duration: 500,
-        background: ["../../images/bg_liuyan.jpg", "../../images/bg_liuyan.jpg", "../../images/bg_liuyan.jpg"]
+        background: ["../../images/swiper1.jpg", "../../images/swiper2.jpg", "../../images/swiper3.jpg"]
     },
 
     imageLoad:function(e){
         var width = e.detail.width;
         var height = e.detail.height;
-        console.log(750 / (width / height));
         this.setData({
             hig: 750 / (width / height)
         });
@@ -35,12 +34,22 @@ Page({
         wx.request({
             url: 'https://e.fslujiaoxiang.cn/jiameng/suancaiyujiameng/aaa.php',
             success:function(res){
-                console.log(res.data);
                 that.setData({
                     brand: res.data
                 });
             }
-        })
+        });
+        wx.request({
+            url: 'https://e.fslujiaoxiang.cn/jiameng/mejson.php',
+            header: {
+                'content-type': 'application/json' // 默认值
+            },
+            success: function (res) {
+                that.setData({
+                    meData: res.data
+                });
+            }
+        });
     },
 
     formSubmit: function(e) {

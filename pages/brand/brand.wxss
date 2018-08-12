@@ -1,3 +1,17 @@
+.top {
+    margin: 0px auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper image {
+    display: block;
+    width: 100%;
+}
 .news{
     padding: 5px;
     background-color: #fff;

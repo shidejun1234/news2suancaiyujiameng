@@ -45,12 +45,26 @@
 .half{
     margin: 10rpx auto;
     margin-top: 20rpx;
-    background: #ff0000;
     width: 46%;
     text-align: center;
 }
 .half image{
     width: 100%;
+}
+
+.me{
+    margin: 0px 10px 10px 10px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    
+}
+
+.me text{
+    background: #ffffff;
+    color: #000000;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
 .a {

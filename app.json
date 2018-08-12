@@ -3,14 +3,7 @@
         "pages/index/index",
         "pages/liuyan/liuyan",
         "pages/call/call",
-        "pages/brand/s1/s1",
-        "pages/brand/s2/s2",
-        "pages/brand/s3/s3",
-        "pages/brand/s4/s4",
-        "pages/brand/s5/s5",
-        "pages/brand/s6/s6",
-        "pages/brand/s7/s7",
-        "pages/brand/s8/s8"
+        "pages/brand/brand"
     ],
     "window": {
         "navigationBarBackgroundColor": "#000000",

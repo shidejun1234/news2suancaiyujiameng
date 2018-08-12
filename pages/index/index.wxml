@@ -8,72 +8,27 @@
             </block>
         </swiper>
     </view>
-    <view style='text-align: center;'>加盟品牌</view>
+    <view style='text-align: center;'>酸菜鱼加盟</view>
     <view class='brand'>
         <view class='half' wx:for="{{brand}}" wx:key="*this">
-            <navigator url="/pages/brand/{{item.num}}/{{item.num}}?id={{item.id}}" hover-class="navigator-hover">
+            <navigator url="/pages/brand/brand?id={{item.id}}" hover-class="navigator-hover">
                 <image src='{{item.brandImage}}' mode='widthFix'></image>
                 <view>
                     <text>{{item.brandName}}</text>
                 </view>
             </navigator>
         </view>
-        <!-- <view class='half'>
-            <navigator url="/pages/brand/s2/s2" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>2</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s3/s3" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>3</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s4/s4" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>4</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s5/s5" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>5</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s6/s6" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>6</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s7/s7" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>7</text>
-                </view>
-            </navigator>
-        </view>
-        <view class='half'>
-            <navigator url="/pages/brand/s8/s8" hover-class="navigator-hover">
-                <image src='../../images/index.jpg' mode='widthFix'></image>
-                <view>
-                    <text>8</text>
-                </view>
-            </navigator>
-        </view> -->
+    </view>
+    <view style='text-align: center; margin-top:50rpx;'>
+        <text decode='&emsp'>联系我们</text>
+    </view>
+    <view class='me'>
+        <text>{{meData.phone}}</text>
+        <text>微信：{{meData.weixin}}</text>
+        <!-- <text>招商QQ：{{meData.qq}}</text>
+        <text>微博：{{meData.weibo}}</text> -->
+        <text>公司名称：{{meData.company}}</text>
+        <!-- <text>{{meData.address}}</text> -->
     </view>
     <view class='a'>
         <form catchsubmit="formSubmit">

@@ -1,4 +1,4 @@
-var WxParse = require('../../../wxParse/wxParse.js');
+var WxParse = require('../../wxParse/wxParse.js');
 Page({
 
     /**
@@ -10,13 +10,12 @@ Page({
         autoplay: true,
         interval: 2500,
         duration: 500,
-        background: ["../../../images/bg_liuyan.jpg"]
+        background: []
     },
 
     imageLoad: function(e) {
         var width = e.detail.width;
         var height = e.detail.height;
-        console.log(750 / (width / height));
         this.setData({
             hig: 750 / (width / height)
         });
@@ -37,6 +36,9 @@ Page({
                 'content-type': 'application/json' // 默认值
             },
             success: function(res) {
+                that.setData({
+                    background:[res.data.brandSwiperImage]
+                });
                 var article = res.data;
                 WxParse.wxParse('article', 'html', res.data.brandCenter, that, 5);
             }
@@ -46,6 +48,12 @@ Page({
     call:function(){
         wx.makePhoneCall({
             phoneNumber: '13242657732' //仅为示例，并非真实的电话号码
+        })
+    },
+
+    liuyan:function(){
+        wx.switchTab({
+            url: '../liuyan/liuyan'
         })
     },
 
