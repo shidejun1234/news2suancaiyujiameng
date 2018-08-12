@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-section">
+            <input class="input" type="number" name="input" value='18924035630' />
+            <view class="btn-area">
+                <button type="primary" bindtap="makePhoneCall">拨打</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+.container{
+    margin-top: 100px;
+}
+.page-section{
+  width: auto;
+  margin: 30rpx;
+  padding: 44rpx 60rpx 60rpx;
+  font-size: 28rpx;
+}
+.desc{
+  margin-bottom: 20rpx;
+}
+.input{
+  height: 119rpx;
+  line-height: 119rpx;
+  font-size: 78rpx;
+  text-align: center;
+  background: #e4e4e4;
+}
+.btn-area{
+  padding: 0;
+}

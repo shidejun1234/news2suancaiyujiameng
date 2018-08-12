@@ -1,0 +1,27 @@
+.bg{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.a{
+    margin: 10px;
+}
+
+.b {
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 14px;
+    border: 1px solid #5e5e5e;
+    background: #e4e4e4;
+}
+
+.submit {
+    margin: 30px auto;
+    width: 120px;
+    font-size: 14px;
+    background-color: #79594a;
+}
+

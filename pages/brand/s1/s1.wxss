@@ -1,0 +1,27 @@
+/* pages/brand/s1/s1.wxss */
+.news{
+    padding: 5px;
+    background-color: #fff;
+    margin-bottom: 100rpx;
+}
+.btn-bottom{
+    height: 100rpx;
+    background: #5e5e5e;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.half{    
+    background: #fff;
+    height: 100rpx;
+    margin: 0px auto;
+    border: 3rpx solid #5e5e5e;
+    width: 49%;
+    text-align: center;
+}
+.half image{
+    width: 25%;
+}
