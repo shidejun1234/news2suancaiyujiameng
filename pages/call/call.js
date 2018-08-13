@@ -11,6 +11,9 @@ Page({
     onShow: function() {
         wx.makePhoneCall({
             phoneNumber: '18924035630'
-        })
+        });
+        wx.switchTab({
+            url: '../index/index'
+        });
     }
 })

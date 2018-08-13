@@ -13,11 +13,29 @@
         <template is="wxParse" data="{{wxParseData:article.nodes}}" />
     </view>
     <view class='btn-bottom'>
-        <view class='half' bindtap='call'>
-            <image src='../../images/call3.jpg' mode='widthFix'></image>
+        <view class='half' bindtap='index'>
+            <view>
+                <image src='../../images/index.jpg' mode='widthFix'></image>
+            </view>
+            <view>
+                <text>首页</text>
+            </view>
         </view>
         <view class='half' bindtap='liuyan'>
-            <image src='../../images/liuyan3.jpg' mode='widthFix'></image>
+            <view>
+                <image src='../../images/liuyan.jpg' mode='widthFix'></image>
+            </view>
+            <view>
+                <text>留言</text>
+            </view>
+        </view>
+        <view class='half' bindtap='call'>
+            <view>
+                <image src='../../images/call.jpg' mode='widthFix'></image>
+            </view>
+            <view>
+                <text>联系我们</text>
+            </view>
         </view>
     </view>
 </view>

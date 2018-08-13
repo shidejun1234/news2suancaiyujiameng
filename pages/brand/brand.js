@@ -45,15 +45,21 @@ Page({
         })
     },
 
-    call:function(){
-        wx.makePhoneCall({
-            phoneNumber: '13242657732' //仅为示例，并非真实的电话号码
+    index: function () {
+        wx.switchTab({
+            url: '../index/index'
         })
     },
 
     liuyan:function(){
         wx.switchTab({
             url: '../liuyan/liuyan'
+        })
+    },
+
+    call:function(){
+        wx.makePhoneCall({
+            phoneNumber: '13242657732' //仅为示例，并非真实的电话号码
         })
     },
 

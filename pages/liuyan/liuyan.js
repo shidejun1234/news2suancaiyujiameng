@@ -53,7 +53,7 @@ Page({
             liuyan = that.data.otherLiuyan;
         }
         wx.request({
-            url: 'https://e.fslujiaoxiang.cn/jiameng/suancaiyu/add.php',
+            url: 'https://e.fslujiaoxiang.cn/jiameng/suancaiyujiameng/add.php',
             method: 'POST',
             data: {
                 uName: e.detail.value.uName,
